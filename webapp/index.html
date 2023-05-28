@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Sync</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <nav class="navigation">
+            <div class="navigation__logo flex">
+                <img class="logo" src="img/logo.png" />
+            </div>
+            <div class="navigation__main flex">
+                <p class="welcoming-text">Welcome <span class="username">Urząd Miasta Poznań</span></p>
+            </div>
+            <button class="btn--log-out">Log out</button>
+        </nav>
+    
+        <main class="main wrapper2">
+            <h1 class="title">EV Charger Calculator</h1>
+            <h2 class="subtitle">Find the most cost-efficient option regarding your EV Charger infrastructure.</h2>
+        
+            <section class="content">
+                <form class="form">
+                    <h2 class="form__title">Informations about your city</h2>
+                    <div class="form__subtitle">
+                        <p class="subtitle__content">You can also upload a .csv file containing all the necessary data</p>
+                        <button class="btn--upload">Upload</button>
+                        <button class="btn--example--data">Input example data</button>
+                    </div>
+                    <div class="inputs flex">
+                        <div class="fsection budget text flex">
+                            <div class="budget__content flex">
+                                <label for="budget">Budget:</label>
+                                <input class="budget-num" type="number" id="budget"/>
+                            </div>
+                        </div>
+                        <div class="fsection place text flex">
+                            <div class="place__name flex">
+                                <label for="text1">Name of the place:</label>
+                                <input type="text" id="text1"/>
+                            </div>
+                            <div class="place__value flex">
+                                <label for="num1">Installation Cost:</label>                    
+                                <input type="number" id="num1"/>
+                            </div>
+                            <div class="place__traffic flex">
+                                <label for="place1">Traffic values (',' separated):</label>
+                                <input type="text" id="place1"/>
+                            </div>
+                        </div>
+                        <div class="fsection place text flex">
+                            <div class="place__name flex">
+                                <label for="text2">Name of the place:</label>
+                                <input type="text" id="text2"/>
+                            </div>
+                            <div class="place__value flex">
+                                <label for="num2">Installation Cost:</label>                    
+                                <input type="number" id="num2"/>
+                            </div>
+                            <div class="place__traffic flex">
+                                <label for="place2">Traffic values (',' separated):</label>
+                                <input type="text" id="place2"/>
+                            </div>
+                        </div>
+                        <div class="fsection place text flex">
+                            <div class="place__name flex">
+                                <label for="text3">Name of the place:</label>
+                                <input type="text" id="text3"/>
+                            </div>
+                            <div class="place__value flex">
+                                <label for="num3">Installation Cost:</label>                    
+                                <input type="number" id="num3"/>
+                            </div>
+                            <div class="place__traffic flex">
+                                <label for="place3">Traffic values (',' separated):</label>
+                                <input type="text" id="place3"/>
+                            </div>
+                        </div>
+                        <div class="fsection place text flex">
+                            <div class="place__name flex">
+                                <label for="text4">Name of the place:</label>
+                                <input type="text" id="text4"/>
+                            </div>
+                            <div class="place__value flex">
+                                <label for="num4">Installation Cost:</label>                    
+                                <input type="number" id="num4"/>
+                            </div>
+                            <div class="place__traffic flex">
+                                <label for="place4">Traffic values (',' separated):</label>
+                                <input type="text" id="place4"/>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-add">Add input</button>
+                    <button class="btn-calc">Calculate</button>
+                </form>
+                <div class="results flex">
+                    <h2 class="results__title">Results</h2>
+                    <div class="result__box results__best-option flex">
+                        <p class="result__box--title ">Best option #1</p>
+                        <p class="result__box--result best-option">...</p>
+                    </div>
+                    <div class="result__box results__best-option-2 flex">
+                        <p class="result__box--title ">Best option #2</p>
+                        <p class="result__box--result best-option-2">...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
